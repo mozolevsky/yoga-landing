@@ -1,0 +1,24 @@
+$color-main: #7c5cd1;
+$color-text: #514d55;
+$text-color2: #514d56;
+
+/* breakpoints */
+$sm: 767px;
+$md: 991px;
+
+/* other */
+@mixin fontSH($size: 20px, $height: 27px) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin trans($duration: 0.3s) {
+  transition: all $duration ease-in-out;
+}
+
+@mixin elemToCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

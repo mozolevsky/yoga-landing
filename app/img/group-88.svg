@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="361" height="225" viewBox="0 0 361 225">
+    <defs>
+        <ellipse id="c" cx="201.366" cy="27.234" rx="5.366" ry="5.234"/>
+        <filter id="b" width="305%" height="310.2%" x="-102.5%" y="-66.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feMorphology in="SourceAlpha" radius="3" result="shadowInner"/>
+            <feOffset dy="4" in="shadowInner" result="shadowInner"/>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+        </filter>
+        <ellipse id="e" cx="201.366" cy="78.234" rx="5.366" ry="5.234"/>
+        <filter id="d" width="305%" height="310.2%" x="-102.5%" y="-66.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feMorphology in="SourceAlpha" radius="3" result="shadowInner"/>
+            <feOffset dy="4" in="shadowInner" result="shadowInner"/>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+        </filter>
+        <ellipse id="g" cx="201.366" cy="130.234" rx="5.366" ry="5.234"/>
+        <filter id="f" width="305%" height="310.2%" x="-102.5%" y="-66.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feMorphology in="SourceAlpha" radius="3" result="shadowInner"/>
+            <feOffset dy="4" in="shadowInner" result="shadowInner"/>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+        </filter>
+        <ellipse id="i" cx="201.366" cy="190.234" rx="5.366" ry="5.234"/>
+        <filter id="h" width="305%" height="310.2%" x="-102.5%" y="-66.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feMorphology in="SourceAlpha" radius="3" result="shadowInner"/>
+            <feOffset dy="4" in="shadowInner" result="shadowInner"/>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+        </filter>
+        <path id="j" d="M1.713 3.93C1.319 1.76 2.765.352 4.928.736l48.434 2.26c2.2-.165 5.769-.446 7.972-.619L124.514.02c2.2-.01 3.853 1.771 3.696 3.962 0 0-4.898 65.803-4.898 101.617 0 35.813 4.035 44.595 4.035 44.595.636 2.103-.632 3.65-2.842 3.462 0 0-25.772-2.354-43.001-2.354s-76.51 2.531-76.51 2.531a3.96 3.96 0 0 1-4.13-3.825s-.843-19.453.136-44.41c.98-24.956 3.707-41.875 3.707-56.03 0-32.908-2.994-45.637-2.994-45.637z"/>
+        <path id="a" d="M19.897 161.938c.049-9.215 7.526-16.662 16.74-16.674H46.89a5.827 5.827 0 0 0 5.834-5.805v-8.577c0-.514-.178-1.012-.504-1.409l-4.596-5.627a6.554 6.554 0 0 1-1.483-4.13v-5.367a2.224 2.224 0 0 0-2.224-2.224h-.297a1.483 1.483 0 0 1-1.482-1.483v-5.93c0-.82.664-1.483 1.482-1.483a2.224 2.224 0 0 0 2.225-2.224V92.99a17.051 17.051 0 0 1 28.698-12.447c.578.54 1.4.731 2.157.504a9.979 9.979 0 0 0 4.107-2.395c.854 1.592.881 3.5.075 5.116a2.224 2.224 0 0 0 1.86 3.217 10.068 10.068 0 0 0 5.02-1.023 5.56 5.56 0 0 1-1.528 4.96 5.412 5.412 0 0 1-4.062 1.616 2.335 2.335 0 0 0-1.594.638c-.427.418-.667.99-.668 1.586v6.243c0 1.228.996 2.224 2.225 2.224.818 0 1.482.663 1.482 1.482v5.931c0 .82-.664 1.483-1.482 1.483h-.312a2.224 2.224 0 0 0-2.224 2.224v5.368a6.546 6.546 0 0 1-1.483 4.129l-4.544 5.627a2.224 2.224 0 0 0-.504 1.409v8.57a5.827 5.827 0 0 0 5.834 5.805h10.253c9.217.012 16.696 7.463 16.74 16.68H19.897z"/>
+        <mask id="l" width="85.999" height="85.993" x="0" y="0" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g stroke="#CDC0F0" stroke-dasharray="4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M123.16 145.07s19.766 56.09 73.082 43.496M121.204 85.357s23.888 43.462 73.082 43.496M121.29 64.543s24.342 11.791 73.259 12.588M102.398 43.148s43.234-17.814 92.15-17.017"/>
+        </g>
+        <g transform="translate(208 16)">
+            <text fill="#9270EF" font-family="DPDorkDiary" font-size="18" font-weight="400" transform="translate(4.04 .916)">
+                <tspan x="0" y="13">Love and relationships</tspan>
+            </text>
+            <rect width="91.575" height="5" x="49.638" y="22.955" fill="#F6F4FF" rx="2.5"/>
+            <rect width="44.38" height="5.045" x=".968" y="22.955" fill="#F6F4FF" rx="2.522"/>
+            <rect width="51.485" height="5" x="62.51" y="40" fill="#F6F4FF" rx="2.5"/>
+            <rect width="57.205" height="5" x="2.444" y="40" fill="#F6F4FF" rx="2.5"/>
+            <rect width="79.756" height="5" x="2.444" y="31" fill="#F6F4FF" rx="2.5"/>
+            <rect width="42.374" height="5" x="85.392" y="31" fill="#F6F4FF" rx="2.5"/>
+        </g>
+        <g transform="translate(208 68)">
+            <text fill="#9270EF" font-family="DPDorkDiary" font-size="18" font-weight="400" transform="translate(3.97 .347)">
+                <tspan x="0" y="13">Work</tspan>
+            </text>
+            <rect width="98.646" height="5" x="53.397" y="23.955" fill="#F6F4FF" rx="2.5"/>
+            <rect width="47.807" height="5.045" x=".968" y="23.955" fill="#F6F4FF" rx="2.522"/>
+            <rect width="55.461" height="5" x="67.262" y="41" fill="#F6F4FF" rx="2.5"/>
+            <rect width="61.623" height="5" x="2.558" y="41" fill="#F6F4FF" rx="2.5"/>
+            <rect width="85.915" height="5" x="2.558" y="32" fill="#F6F4FF" rx="2.5"/>
+            <rect width="45.647" height="5" x="91.911" y="32" fill="#F6F4FF" rx="2.5"/>
+        </g>
+        <g transform="translate(208 121)">
+            <text fill="#9270EF" font-family="DPDorkDiary" font-size="18" font-weight="400" transform="translate(3.97 .347)">
+                <tspan x="0" y="13">Spirituality</tspan>
+            </text>
+            <rect width="84.71" height="5" x="45.99" y="23.955" fill="#F6F4FF" rx="2.5"/>
+            <rect width="41.053" height="5.045" x=".968" y="23.955" fill="#F6F4FF" rx="2.522"/>
+            <rect width="47.625" height="5" x="57.896" y="41" fill="#F6F4FF" rx="2.5"/>
+            <rect width="52.917" height="5" x="2.333" y="41" fill="#F6F4FF" rx="2.5"/>
+            <rect width="73.777" height="5" x="2.333" y="32" fill="#F6F4FF" rx="2.5"/>
+            <rect width="39.198" height="5" x="79.063" y="32" fill="#F6F4FF" rx="2.5"/>
+        </g>
+        <g transform="translate(208 179)">
+            <text fill="#9270EF" font-family="DPDorkDiary" font-size="18" font-weight="400" transform="translate(3.97 .347)">
+                <tspan x="0" y="13">Family</tspan>
+            </text>
+            <rect width="84.71" height="5" x="45.99" y="23.955" fill="#F6F4FF" rx="2.5"/>
+            <rect width="41.053" height="5.045" x=".968" y="23.955" fill="#F6F4FF" rx="2.522"/>
+            <rect width="47.625" height="5" x="57.896" y="41" fill="#F6F4FF" rx="2.5"/>
+            <rect width="52.917" height="5" x="2.333" y="41" fill="#F6F4FF" rx="2.5"/>
+            <rect width="73.777" height="5" x="2.333" y="32" fill="#F6F4FF" rx="2.5"/>
+            <rect width="39.198" height="5" x="79.063" y="32" fill="#F6F4FF" rx="2.5"/>
+        </g>
+        <g transform="translate(-2 -2)">
+            <use fill="#000" filter="url(#b)" xlink:href="#c"/>
+            <ellipse cx="201.366" cy="27.234" stroke="#F492D2" stroke-width="3" rx="3.866" ry="3.734"/>
+        </g>
+        <g transform="translate(-2 -2)">
+            <use fill="#000" filter="url(#d)" xlink:href="#e"/>
+            <ellipse cx="201.366" cy="78.234" stroke="#F492D2" stroke-width="3" rx="3.866" ry="3.734"/>
+        </g>
+        <g transform="translate(-2 -2)">
+            <use fill="#000" filter="url(#f)" xlink:href="#g"/>
+            <ellipse cx="201.366" cy="130.234" stroke="#F492D2" stroke-width="3" rx="3.866" ry="3.734"/>
+        </g>
+        <g transform="translate(-2 -2)">
+            <use fill="#000" filter="url(#h)" xlink:href="#i"/>
+            <ellipse cx="201.366" cy="190.234" stroke="#F492D2" stroke-width="3" rx="3.866" ry="3.734"/>
+        </g>
+        <g>
+            <g transform="rotate(-3 124.783 23.217)">
+                <mask id="k" fill="#fff">
+                    <use xlink:href="#j"/>
+                </mask>
+                <use fill="#FFF" xlink:href="#j"/>
+                <path fill="#F6F4FF" d="M26.723 159.893c.046-8.612 7.033-15.572 15.645-15.583h9.582a5.446 5.446 0 0 0 5.453-5.425v-8.016c0-.48-.167-.946-.471-1.317l-4.296-5.259a6.125 6.125 0 0 1-1.386-3.859v-5.016c0-1.148-.93-2.079-2.078-2.079h-.278c-.765 0-1.385-.62-1.385-1.386v-5.543c0-.765.62-1.385 1.385-1.385 1.148 0 2.08-.93 2.08-2.079v-7.49a15.936 15.936 0 0 1 26.82-11.633c.54.505 1.308.684 2.016.471a9.326 9.326 0 0 0 3.839-2.238 5.203 5.203 0 0 1 .069 4.781 2.079 2.079 0 0 0 1.739 3.007 9.41 9.41 0 0 0 4.69-.956 5.196 5.196 0 0 1-1.427 4.635 5.058 5.058 0 0 1-3.797 1.51 2.183 2.183 0 0 0-1.49.597c-.398.39-.622.924-.623 1.482v5.834c0 1.148.93 2.079 2.079 2.079.765 0 1.386.62 1.386 1.385v5.543c0 .766-.62 1.386-1.386 1.386h-.291c-1.148 0-2.079.93-2.079 2.079v5.016a6.118 6.118 0 0 1-1.386 3.86l-4.247 5.258c-.304.371-.47.837-.47 1.317v8.01a5.446 5.446 0 0 0 5.452 5.424h9.582c8.614.012 15.603 6.976 15.645 15.59H26.723z" mask="url(#k)" transform="rotate(-2 66.909 119.71)"/>
+                <g stroke="#9270EF" stroke-dasharray="7" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" mask="url(#k)" transform="rotate(-2 62.896 118.941)">
+                    <use mask="url(#l)" xlink:href="#a"/>
+                </g>
+            </g>
+        </g>
+        <text fill="#7C5CD1" font-family="DPDorkDiary" font-size="18" font-weight="400" transform="rotate(-12 46.884 57.954)">
+            <tspan x="7.988" y="45.44">Your Qualities </tspan> <tspan x="23.261" y="62.44">and traits</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,69 @@
+.accordion,
+.accordion * {
+  box-sizing: border-box;
+}
+
+.accordion {
+  overflow: hidden;
+  background: #fff;
+  width: 700px;
+  margin: 20px auto;
+  font-size: 14px;
+  line-height: 1.5
+}
+
+
+/*----- Section Titles -----*/
+
+.accordion-section-title {
+  width: 100%;
+  padding: 7px 30px 7px 15px;
+  display: inline-block;
+  background: #f1f1f1;
+  transition: all linear 0.15s;
+  font-size: 13px;
+  line-height: 20px;
+  color: #3f3f3f;
+  text-decoration: none;
+  margin: 0 0 3px 0;
+  position: relative;
+  line-height: 1;
+}
+
+.accordion-section-title.active,
+.accordion-section-title:hover {
+  background: #e8e8e8;
+}
+
+
+/*----- Section Content -----*/
+
+.accordion-section-content {
+  padding: 15px;
+  display: none;
+  background: #fff;
+}
+
+.active,
+.open {
+  display: block;
+}
+
+.arrow {
+  border-top: 4px solid #7d7d7d;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  float: right;
+  transition: all .5s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -3px;
+}
+
+.accordion-section-title.active .arrow {
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid #7d7d7d;
+  margin-top: -7px;
+}

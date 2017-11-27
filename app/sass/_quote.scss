@@ -1,0 +1,54 @@
+.quote {
+    margin-bottom: 19px;
+    padding: 0 18px 53px;
+    position: relative;
+    text-align: center;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 283px;
+        height: 1px;
+        opacity: 0.22;
+        background: $text-color2;
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 19px;
+        line-height: 46px;
+        font-size: 34px;
+        text-align: center;
+        color: $color-text;
+    }
+
+    &__author {
+        margin: 0;
+        line-height: 25px;
+        font-size: 18px;
+        font-style: italic;
+        text-align: center;
+        color: $color-text;
+    }
+}
+
+@media (max-width: $sm) {
+    .quote {
+        margin-bottom: 22.5px;
+        padding: 0 0 29px 0;
+
+        &::after {
+            width: 102px;
+        }
+
+        &__text {
+            margin-bottom: 17px;
+            font-size: 18px;
+            line-height: 25px;
+            font-style: italic;
+        }
+    }
+}
