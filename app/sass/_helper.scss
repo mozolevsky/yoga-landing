@@ -23,3 +23,9 @@ $md: 991px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin inversion($text-border-color: $color-main, $bg-color: #fff) {
+  box-shadow: inset 0px 0px 0px 2px $text-border-color;
+  background: $bg-color;
+  color:  $text-border-color;
+}

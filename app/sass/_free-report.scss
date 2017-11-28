@@ -93,12 +93,16 @@
         border-radius: 100px;
         background-color: $color-main;
         box-shadow: 0 12px 24px 0 rgba(124, 92, 209, 0.26);
-        border: solid 4px $color-main;
         font-size: 20px;
         font-weight: bold;
         text-align: center;
         color: #ffffff;
         text-decoration: none;
+        @include trans();
+
+        &:hover {
+            @include inversion();
+        }
     }
 
     &__iconed-text {
