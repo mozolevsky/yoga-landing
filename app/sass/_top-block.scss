@@ -1,5 +1,227 @@
 .top-block {
-    height: 306px;
+    position: relative;
     width: 100%;
-    background-color: pink;
+    overflow: hidden;
+
+    &__wrapper {
+        height: 306px;
+        min-width: 1400px;
+        box-sizing: border-box;
+        background: 
+                    url('../img/line-gradient.svg') no-repeat center,
+                    url('../img/lines-background@2x.png') no-repeat center;
+        background-size: contain;
+    }
+
+    &__chart-wrapper {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 265.6px;
+        height: 306px;
+        margin: 0 auto;
+        background: url('../img/paper-shadow.svg') no-repeat center;
+    }
+
+    &__icon {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            width: 6.2px;
+            height: 6.2px;
+            border-radius: 50%;
+            background-color: #b395eb;
+            box-shadow: 0px 0px 0px 4px rgba(179, 149, 235, 0.2);
+        }
+
+
+        &__icon-img {
+            margin-bottom: 9px;
+        }
+
+        &_1 {
+            left: -562px;
+            top: 178px;
+
+            &::before {
+                top: -14px;
+            }
+        }
+
+        &_2 {
+            left: -400px;
+            top: 21px;
+
+            &::before {
+                bottom: -14px;
+            }
+        }
+
+        &_3 {
+            left: -250.6px;
+            top: 203px;
+
+            &::before {
+                top: -14px;
+            }
+        }
+
+        &_4 {
+            right: -295px;
+            top: 200px;
+
+            &::before {
+                top: -14px;
+            }
+        }
+
+        &_5 {
+            right: -469px;
+            top: 43px;
+
+            &::before {
+                bottom: -14px;
+            }
+        }
+
+        &_6 {
+            right: -559px;
+            top: 231px;
+
+            &::before {
+                top: -14px;
+            }
+        }
+    }
+}
+
+.chart {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 44.6px;
+
+    &__round {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 145.1px;
+        height: 145.1px;
+        background: linear-gradient(65deg, #fdbea3 0%, #f392d2 46%, #7c5cd1 97%);
+        border-radius: 50%;
+    }
+
+    &__icon-area {
+        width: 123px;
+        height: 123px;
+        background: #fff url('../img/paper-user.svg') no-repeat center;
+        border-radius: 50%;
+    }
+
+    &__title {
+        margin: 0 auto;
+        width: 145px;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.25;
+        letter-spacing: -0.2px;
+        text-align: center;
+        color: $color-main;
+        text-transform: uppercase;
+    }
+
+    &__marker {
+        box-sizing: border-box;
+        padding-left: 31px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        width: 95px;
+        height: 41px;
+
+        line-height: 22px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 4px;
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 12px;
+            top: 15px;
+            width: 18px;
+            height: 20px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+        }
+
+        &_vatta {
+            background-color: $color-main;
+            top: 26px;
+            left: -73px;
+
+            &::before {
+                background: url('../img/vata-circle.svg') no-repeat center;
+            }
+
+            &::after {
+                background: url('../img/vata-line.svg') no-repeat center;
+                right: -69px;
+                height: 13px;
+                width: 79px;
+            }
+        }
+
+        &_pitta {
+            background-color: #fdbea3;
+            top: 43px;
+            right: -116.4px;
+
+            &::before {
+                background: url('../img/pitta-circle.svg') no-repeat center;
+            }
+
+            &::after {
+                background: url('../img/pitta-line.svg') no-repeat center;
+                left: -93px;
+                height: 13px;
+                width: 103px;
+            }
+        }
+
+        &_kapha {
+            background-color: #f492d2;
+            top: 170px;
+            right: -64px;
+
+            &::before {
+                background: url('../img/kapha-circle.svg') no-repeat center;
+            }
+
+            &::after {
+                background: url('../img/kapha-line.svg') no-repeat center;
+                left: -83px;
+                height: 14px;
+                width: 102px;
+                top: 8px;
+            }
+        }
+    }
 }
