@@ -14,17 +14,19 @@ body {
 }
 
 .h1 {
-    margin-top: 48.8px;
+    margin-top: 16.8px;
     margin-bottom: 7px;
+    text-align: center;
 
-    font-size: 52px;
+    font-size: 51px;
     font-weight: bold;
     line-height: 1.19;
     text-align: center;
     color: $color-main;
 
     &__desc {
-        margin: 0;
+        width: 80%;
+        margin: auto;
         margin-bottom: 44.2px;
         font-size: 24px;
         line-height: 1.33;
@@ -65,6 +67,7 @@ body {
         line-height: 1.24;
 
         &__desc {
+            width: 100%;
             font-size: 18px;
             line-height: 1.38;
         }
@@ -72,7 +75,7 @@ body {
 
     .h3 {
         font-size: 28px;
-        line-height: 1.79;
+        line-height: 38px;
     }
 }
 

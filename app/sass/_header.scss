@@ -1,5 +1,5 @@
 .header {
-    margin: 21px 40px 54px 34.9px;
+    margin: 19px 38px 54px 31.9px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@
     }
 
     &__link {
-        margin-right: 30px;
+        margin-right: 17px;
         line-height: 25px;
         font-size: 18px;
         font-weight: 500;
@@ -32,7 +32,6 @@
             border-radius: 100px;
             background-color: $color-main;
             box-shadow: 0 12px 24px 0 rgba(124, 92, 209, 0.26);
-            border: solid 4px $color-main;
 
             font-size: 18px;
             line-height: 42px;
