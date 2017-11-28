@@ -63,6 +63,16 @@
         &:hover {
             @include inversion();
         }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 74px;
+            height: 45px;
+            top: 0;
+            left: -85px;
+            background: url('../img/group-13.svg') no-repeat center;
+        }
     }
 }
 
@@ -78,6 +88,10 @@
 @media (max-width: $sm) {
     .to-quiz {
         margin-top: 80px;
+
+        &__wrapper {
+            padding-bottom: 53.8px;
+        }
 
         &__title {
             width: 100%;
@@ -97,6 +111,10 @@
             margin-left: -4px;
             width: 100%;
             @include fontSH(18px, 58px);
+
+            &::before {
+                content: none;
+            }
         }
     }
 }

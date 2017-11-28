@@ -1,0 +1,41 @@
+.footer {
+    background-color: #534e62;
+    border: solid 1px #979797;
+    padding-top: 51px;
+    padding-bottom: 59px;
+
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+
+    &__desc {
+        width: 639px;
+        margin: 0 auto;
+    }
+
+    &__link {
+        position: relative;
+        padding-left: 9px;
+        color: #fff;
+        text-decoration: none;
+
+        &::before {
+            content: '|';
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+    }
+}
+
+@media(max-width: $sm) {
+    .footer {
+        padding-top: 26px;
+        padding-bottom: 20px;
+
+        &__desc {
+            text-align: center;
+            width: 80%;
+        }
+    }
+}
