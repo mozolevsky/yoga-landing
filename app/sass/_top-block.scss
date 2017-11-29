@@ -2,14 +2,14 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    background: url('../img/lines-background@2x.png') no-repeat center;
+    background-size: contain;
 
     &__wrapper {
         height: 306px;
         min-width: 1400px;
         box-sizing: border-box;
-        background: 
-                    url('../img/line-gradient.svg') no-repeat center,
-                    url('../img/lines-background@2x.png') no-repeat center;
+        background: url('../img/line-gradient.svg') no-repeat center;
         background-size: contain;
     }
 
@@ -41,6 +41,15 @@
             box-shadow: 0px 0px 0px 4px rgba(179, 149, 235, 0.2);
         }
 
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            width: 1px;
+            background: #b395eb;
+        }
+
 
         &__icon-img {
             margin-bottom: 9px;
@@ -53,6 +62,11 @@
             &::before {
                 top: -14px;
             }
+
+            &::after {
+                height: 47px;
+                top: -58px;
+            }
         }
 
         &_2 {
@@ -61,6 +75,11 @@
 
             &::before {
                 bottom: -14px;
+            }
+
+            &::after {
+                height: 43px;
+                bottom: -54px;
             }
         }
 
@@ -71,6 +90,11 @@
             &::before {
                 top: -14px;
             }
+
+            &::after {
+                height: 42px;
+                top: -53px;
+            }
         }
 
         &_4 {
@@ -79,6 +103,11 @@
 
             &::before {
                 top: -14px;
+            }
+
+            &::after {
+                height: 44px;
+                top: -55px;
             }
         }
 
@@ -89,6 +118,11 @@
             &::before {
                 bottom: -14px;
             }
+
+            &::after {
+                height: 49px;
+                bottom: -59px;
+            }
         }
 
         &_6 {
@@ -97,6 +131,11 @@
 
             &::before {
                 top: -14px;
+            }
+
+            &::after {
+                height: 44px;
+                top: -55px;
             }
         }
     }
@@ -221,6 +260,122 @@
                 height: 14px;
                 width: 102px;
                 top: 8px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1450px) {
+    .top-block {
+        &__icon {
+            &::after {
+                content: none;
+            }
+        }
+    }
+}
+
+
+@media(max-width: $sm) {
+    .top-block {
+        background-size: 438px 253px;
+
+        &__wrapper {
+            height: 234px;
+        }
+
+        &__chart-wrapper {
+            height: auto;
+            width: 158px;
+            top: 11px;
+            background: #fff;
+        }
+
+        &__icon {
+            display: none;
+        }
+    }
+
+    .chart {
+        padding-top: 23px;
+        padding-bottom: 11px;
+        box-shadow: 0 12px 24px 0 rgba(171, 161, 196, 0.12);
+
+        &__round {
+            margin-bottom: 12.5px;
+            width: 104px;
+            height: 104px;
+        }
+
+        &__icon-area {
+            width: 85px;
+            height: 85px;
+            background-size: 65%;
+        }
+
+        &__title {
+            font-size: 12px;
+            line-height: 1.42;
+            letter-spacing: -0.2px;
+            text-align: center;
+        }
+
+        &__marker {
+            padding-left: 19px;
+            width: 60.7px;
+            height: 25.4px;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+
+            font-size: 11px;
+            line-height: 15px;
+
+            &::before {
+                top: 9px;
+                left: 8px;
+                width: 6.5px;
+                height: 6.5px;
+                box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+                background: rgba(255, 255, 255, 0.8);
+                border-radius: 50%;
+            }
+
+            &_vatta {
+                top: 16px;
+                left: -52px;
+
+                &::after {
+                    right: -32px;
+                    height: 13px;
+                    width: 72px;
+                    z-index: -1;
+                }
+            }
+
+            &_pitta {
+                top: 25.6px;
+                right: -71.4px;
+
+                &::after {
+                    left: -47px;
+                    height: 13px;
+                    width: 109px;
+                    z-index: -1;
+                }
+            }
+
+            &_kapha {
+                top: 105px;
+                right: -56px;
+                width: 63.7px;
+
+                &::after {
+                    left: -67px;
+                    height: 14px;
+                    width: 128px;
+                    top: 0px;
+                    z-index: -1;
+                }
             }
         }
     }
