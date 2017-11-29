@@ -7,10 +7,7 @@
 
     &__wrapper {
         height: 306px;
-        min-width: 1400px;
         box-sizing: border-box;
-        background: url('../img/line-gradient.svg') no-repeat center;
-        background-size: contain;
     }
 
     &__chart-wrapper {
@@ -18,10 +15,7 @@
         top: 0;
         left: 50%;
         transform: translate(-50%);
-        width: 265.6px;
-        height: 306px;
-        margin: 0 auto;
-        background: url('../img/paper-shadow.svg') no-repeat center;
+        
     }
 
     &__icon {
@@ -143,10 +137,16 @@
 
 .chart {
     position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
     padding-top: 44.6px;
+    width: 265.6px;
+    height: 306px;
+    margin: 0 auto;
+    background: url('../img/paper-shadow.svg') no-repeat center;
 
     &__round {
         margin-bottom: 20px;
@@ -157,6 +157,15 @@
         height: 145.1px;
         background: linear-gradient(65deg, #fdbea3 0%, #f392d2 46%, #7c5cd1 97%);
         border-radius: 50%;
+    }
+
+    &__line {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 1400px;
+        height: 95px;
     }
 
     &__icon-area {
@@ -265,16 +274,6 @@
     }
 }
 
-@media (min-width: 1450px) {
-    .top-block {
-        &__icon {
-            &::after {
-                content: none;
-            }
-        }
-    }
-}
-
 
 @media(max-width: $sm) {
     .top-block {
@@ -285,10 +284,7 @@
         }
 
         &__chart-wrapper {
-            height: auto;
-            width: 158px;
             top: 11px;
-            background: #fff;
         }
 
         &__icon {
@@ -299,6 +295,9 @@
     .chart {
         padding-top: 23px;
         padding-bottom: 11px;
+        height: auto;
+        width: 158px;
+        background: #fff;
         box-shadow: 0 12px 24px 0 rgba(171, 161, 196, 0.12);
 
         &__round {
