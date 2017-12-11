@@ -16,7 +16,7 @@
             <g transform="translate(508.000000, 117.000000)">
                 <g>
                     <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                    <use fill="#F5F4FB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="white" fill-rule="evenodd" xlink:href="#path-1"></use>
                 </g>
             </g>
         </g>

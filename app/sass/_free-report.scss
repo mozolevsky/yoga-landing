@@ -96,10 +96,10 @@
         text-align: center;
         color: #ffffff;
         text-decoration: none;
-        @include trans();
+        @include trans(0.1s);
 
         &:hover {
-            @include inversion();
+            background: #6C51B6;
         }
     }
 

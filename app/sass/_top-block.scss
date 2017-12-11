@@ -1,4 +1,5 @@
 .top-block {
+    margin-top: 117px;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -277,6 +278,8 @@
 
 @media(max-width: $sm) {
     .top-block {
+        display: inline-block;
+        margin-top: 64px;
         background-size: 438px 253px;
 
         &__wrapper {
