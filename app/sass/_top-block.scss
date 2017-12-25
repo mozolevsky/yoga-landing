@@ -1,10 +1,10 @@
 .top-block {
-    margin-top: 117px;
+    margin-top: 100px;
     position: relative;
     width: 100%;
-    overflow: hidden;
-    background: url('../img/lines-background@2x.png') no-repeat center;
+    background: url('../img/lines-background_402x.png') no-repeat center;
     background-size: contain;
+    overflow: hidden;
 
     &__wrapper {
         height: 306px;
@@ -16,7 +16,6 @@
         top: 0;
         left: 50%;
         transform: translate(-50%);
-        
     }
 
     &__icon {
@@ -154,23 +153,22 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 145.1px;
-        height: 145.1px;
+        width: 128px;
+        height: 128px;
         background: linear-gradient(65deg, #fdbea3 0%, #f392d2 46%, #7c5cd1 97%);
         border-radius: 50%;
     }
 
     &__line {
         position: absolute;
-        top: 50%;
+        top: 38%;
         left: 50%;
         transform: translate(-50%, -50%);
-        height: 312px;
     }
 
     &__icon-area {
-        width: 123px;
-        height: 123px;
+        width: 110px;
+        height: 110px;
         background: #fff url('../img/paper-user.svg') no-repeat center;
         border-radius: 50%;
     }
@@ -189,15 +187,16 @@
 
     &__marker {
         box-sizing: border-box;
-        padding-left: 31px;
+        padding-left: 25px;
         position: absolute;
         display: flex;
-        align-items: center;
-        width: 95px;
-        height: 41px;
 
-        line-height: 22px;
-        font-size: 16px;
+        align-items: center;
+        width: 78px;
+        height: 31px;
+
+        line-height: 16px;
+        font-size: 12px;
         font-weight: bold;
         text-align: left;
         color: #fff;
@@ -208,8 +207,8 @@
         &::before {
             content: '';
             position: absolute;
-            left: 12px;
-            top: 15px;
+            left: 7px;
+            top: 10px;
             width: 18px;
             height: 20px;
         }
@@ -223,7 +222,7 @@
         &_vatta {
             background-color: $color-main;
             top: 26px;
-            left: -73px;
+            left: -23px;
 
             &::before {
                 background: url('../img/vata-circle.svg') no-repeat center;
@@ -231,16 +230,17 @@
 
             &::after {
                 background: url('../img/vata-line.svg') no-repeat center;
-                right: -69px;
+                right: -46px;
                 height: 13px;
-                width: 79px;
+                width: 75px;
+                z-index: -1;
             }
         }
 
         &_pitta {
             background-color: #fdbea3;
             top: 43px;
-            right: -116.4px;
+            right: -67.4px;
 
             &::before {
                 background: url('../img/pitta-circle.svg') no-repeat center;
@@ -248,16 +248,17 @@
 
             &::after {
                 background: url('../img/pitta-line.svg') no-repeat center;
-                left: -93px;
+                left: -69px;
                 height: 13px;
                 width: 103px;
+                z-index: -1;
             }
         }
 
         &_kapha {
             background-color: #f492d2;
-            top: 170px;
-            right: -64px;
+            top: 153px;
+            right: -30px;
 
             &::before {
                 background: url('../img/kapha-circle.svg') no-repeat center;
@@ -265,10 +266,11 @@
 
             &::after {
                 background: url('../img/kapha-line.svg') no-repeat center;
-                left: -83px;
+                left: -90px;
                 height: 14px;
-                width: 102px;
-                top: 8px;
+                width: 155px;
+                top: 3px;
+                z-index: -1;
             }
         }
     }
