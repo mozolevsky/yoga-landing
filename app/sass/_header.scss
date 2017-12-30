@@ -1,8 +1,4 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
     width: 100%;
     padding: 21px 40px 21px 35px;
     display: flex;
@@ -55,10 +51,93 @@
     }
 }
 
+.header-sticky {
+    position: fixed;
+    z-index: 5;
+    top: -100%;
+    width: 100%;
+    padding: 7px 40px 7px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 0px 4px 34px -2px rgba(0, 0, 0, 0.116);
+    transition: all 0.8s ease;
+
+    &_opened {
+        top: 0;
+    }
+
+
+    &__mobile-icon {
+        display: none;
+    }
+
+    &__logo {
+        width: 80px;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        margin-right: 17px;
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: 500;
+        color: $color-main;
+        text-decoration: none;
+
+        &_btn {
+            margin-right: 0;
+            width: 154px;
+            border-radius: 100px;
+            background-color: $color-main;
+            box-shadow: 0 12px 24px 0 rgba(124, 92, 209, 0.26);
+
+            font-size: 18px;
+            line-height: 42px;
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff;
+            @include trans(0.1s);
+
+            &:hover {
+                background: #6C51B6;
+            }
+        }
+    }
+}
+
 @media (max-width: $sm) {
     .header {
-        position: fixed;
         padding: 32px 18px 15px 18px;
+
+        &__mobile-icon {
+            display: block;
+            width: 19px;
+            height: 21.1px;
+            background: url('../img/menu-icon.svg') no-repeat center;
+            background-size: cover;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__logo {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+
+    .header-sticky {
+        position: fixed;
+        padding: 12px 18px 7px 18px;
 
         &__mobile-icon {
             display: block;

@@ -22,3 +22,14 @@ $(document).ready(function() {
       e.preventDefault();
     });
   });
+
+// sticky header
+var stickyHeader = document.querySelector('.header-sticky');
+
+window.addEventListener("scroll", function() {
+  if (window.pageYOffset > 150) {
+    stickyHeader.classList.add('header-sticky_opened');
+  } else {
+    stickyHeader.classList.remove('header-sticky_opened');
+  }
+});

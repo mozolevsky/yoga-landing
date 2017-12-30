@@ -1,5 +1,5 @@
 .top-block {
-    margin-top: 100px;
+    margin-top: 16px;
     position: relative;
     width: 100%;
     background: url('../img/lines-background_402x.png') no-repeat center;
@@ -280,7 +280,7 @@
 @media(max-width: $sm) {
     .top-block {
         display: inline-block;
-        margin-top: 64px;
+        margin-top: 10px;
         background-size: 438px 253px;
 
         &__wrapper {
