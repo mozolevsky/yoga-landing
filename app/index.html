@@ -294,10 +294,13 @@
  </div>
  
 <nav id="my-menu">
+    <button id="close-button">menu</button>
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About us</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="#">Meal Plan</a></li>
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Start Here</a></li>
     </ul>
 </nav>
 
@@ -308,13 +311,20 @@
   //mobile menu
   $(document).ready(function() {
     $("#my-menu").mmenu({
-       // options
-       //extensions: ["fx-menu-slide"]
+       navbar: {
+        title: null
+       }
     }, {
        // configuration
        offCanvas: {
           pageSelector: "#menu-wrapper"
        }
+    });
+
+    var API = $("#my-menu").data( "mmenu" );
+
+    $("#close-button").click(function() {
+        API.close();
     });
  });
 </script>
