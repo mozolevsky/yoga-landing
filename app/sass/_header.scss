@@ -6,6 +6,17 @@
     background-color: #f6f4ff;
 }
 
+html.mm-opening .mm-menu.mm-opened~.mm-slideout{
+    @media (min-width: 550px){
+        transform: translate3d(80%,0,0);
+    }
+}
+html.mm-opening #menu-wrapper{
+    right: -80%;
+}
+.mm-menu.mm-offcanvas{
+    max-width: none;
+}
 .mm-listview>li:not(.mm-divider):after {
     content: none;
 }
@@ -207,7 +218,8 @@
         &__logo {
             position: absolute;
             left: 50%;
-            transform: translate(-50%);
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 }
