@@ -1,66 +1,3 @@
-#mm-blocker {
-    background: rgba(255, 255, 255, 0.8);
-}
-
-.mm-panels {
-    background-color: #f6f4ff;
-}
-
-html.mm-opening .mm-menu.mm-opened~.mm-slideout{
-    @media (min-width: 550px){
-        transform: translate3d(80%,0,0);
-    }
-}
-html.mm-opening #menu-wrapper{
-    right: -80%;
-}
-.mm-menu.mm-offcanvas{
-    max-width: none;
-}
-.mm-listview>li:not(.mm-divider):after {
-    content: none;
-}
-
-.mm-panels, .mm-panels>.mm-panel {
-    border-color: transparent;
-}
-
-.mm-panels>.mm-panel>.mm-listview:first-child {
-    margin-top: 30px;
-}
-
-.mm-listview, .mm-listview>li {
-    text-align: center;
-}
-
-.mm-listview > li > a, .mm-listview > li > a:hover {
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    font-size: 18px;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-#close-button {
-    display: none;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    border-radius: 30px;
-    border: 0;
-    padding: 8px 10px 8px 30px;
-    background: #fff url('../img/close-button.svg') no-repeat 10px center;
-    background-size: 12px 12px;
-    color: rgba(0,0,0,.75);
-    font-weight: bold;
-}
-
-.mm-opened > #close-button {
-    display: block;
-}
-
-
 .header {
     width: 100%;
     padding: 21px 40px 21px 35px;
@@ -114,6 +51,10 @@ html.mm-opening #menu-wrapper{
     }
 }
 
+.header-sticky-overlay {
+    display: none;
+}
+
 .header-sticky {
     position: fixed;
     z-index: 5;
@@ -130,6 +71,16 @@ html.mm-opening #menu-wrapper{
 
     &_opened {
         top: 0;
+    }
+
+    &_with-overlay > .header-sticky-overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(255,255,255,.5);
+        z-index: 99;
     }
 
 
